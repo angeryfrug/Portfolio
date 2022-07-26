@@ -1,4 +1,91 @@
   body {
-    background: blue
-    
+    background:
+
   }
+  /* body {
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-image:url("https://i.imgur.com/1arpb7H.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2fr)
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    left: 150px;
+    bottom: 0;
+    margin: 100 auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid black;
+  }
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+  }
+  h2 {
+    padding-bottom: 20px
+
+  }
+
+  .display {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 3fr
+  }
+  researched innerspacing from
+  {https://ishadeed.com/article/spacing-in-css/#padding---inner-spacing}
+  .choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-weight: bold;
+    position: relative;
+    }
+
+  .button {
+    padding-left: 10px;
+    border-radius: 10px;
+    padding: 10px
+
+  }
+  #statlist {
+    float: left;
+    list-style-type: none;
+  }
+  #stats {
+    display: block;
+    text-align: justify;
+    padding-bottom: 10px;
+    font-size: 32px
+  }
+  #buylist {
+    float: right;
+    list-style-type: none;
+
+  }
+
+  #tool {
+    display: block;
+    text-align: justify;
+    padding-bottom: 10px;
+    font-size: 28px
+
+  }
+  #toolbutt {
+      padding-right: 10px;
+      border-radius: 10px;
+  } */
