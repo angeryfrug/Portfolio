@@ -1,91 +1,240 @@
-  body {
-    background:
+/* @media (max-width: 600px) {
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: #F7ECE1;
+}
+ researched innerspacing from
+{https://ishadeed.com/article/spacing-in-css/#padding---inner-spacing}
+.header {
+  position: absolute;
+  top: 0;
+  bottom: 75vh;
+  right: 0;
+  left: 0;
+  margin: 100 auto;
+  padding: 50px;
+  background: rgb(89, 83, 129);
+  display: inline-block;
+  color: #F7ECE1
+}
+.pfp {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+  border-style: double;
+  border-left-color: #ACA5CC;
+  border-right-color: #ACA5CC;
+  border-top-color: #ACA5CC;
+  border-bottom-color: #ACA5CC;
+}
+.choices {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-weight: bold;
+  height: 75px;
+  top: 75vh;
+  right: 0px;
+  left: 0px;
+  background: rgb(63, 58, 93);
+}
+.content1 {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+}
+.welc {
+}
+.intro1 {
+}
+.name {
+}
+.content {
+  top: 500px;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+}
 
-  }
-  /* body {
-    top: 0;
-    left: 0;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    background-image:url("https://i.imgur.com/1arpb7H.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-  }
-  #grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 2fr)
-  }
-  .content {
-    position: absolute;
-    top: 0;
-    right: 150px;
-    left: 150px;
-    bottom: 0;
-    margin: 100 auto;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid black;
-  }
-  h1 {
-    position: relative;
-    text-align: center;
-    font-size: 50px;
-  }
-  h2 {
-    padding-bottom: 20px
+.display {
+  top: 500px;
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 3fr;
 
-  }
+}
 
-  .display {
-    position: relative;
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 3fr
-  }
-  researched innerspacing from
-  {https://ishadeed.com/article/spacing-in-css/#padding---inner-spacing}
-  .choices {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-weight: bold;
-    position: relative;
-    }
+.button {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #595381;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px
+  background: #595381;
+  color: #242038;
+}
+#statlist {
+  float: left;
+  list-style-type: none;
+}
+#stats {
+  display: block;
+  text-align: justify;
+  padding-bottom: 10px;
+  font-size: 32px
+}
+#buylist {
+  float: right;
+  list-style-type: none;
 
-  .button {
-    padding-left: 10px;
+}
+
+#tool {
+  display: block;
+  text-align: justify;
+  padding-bottom: 10px;
+  font-size: 28px
+
+}
+#toolbutt {
+    padding-right: 10px;
     border-radius: 10px;
-    padding: 10px
+}
+}
+*/
 
-  }
-  #statlist {
-    float: left;
-    list-style-type: none;
-  }
-  #stats {
-    display: block;
-    text-align: justify;
-    padding-bottom: 10px;
-    font-size: 32px
-  }
-  #buylist {
-    float: right;
-    list-style-type: none;
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: #F7ECE1;
+  font-family: 'Libre Baskerville', serif;
+}
+/* researched innerspacing from
+{https://ishadeed.com/article/spacing-in-css/#padding---inner-spacing} */
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 70vh;
+  margin: 100 auto;
+  padding: 10px;
+  background: rgb(89, 83, 129);
+  display: inline-block;
+  color: #F7ECE1
+}
+.pfp {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 11%;
+  min-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border-style: double;
+  border-left-color: #ACA5CC;
+  border-right-color: #ACA5CC;
+  border-top-color: #ACA5CC;
+  border-bottom-color: #ACA5CC;
+}
+.choices {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-weight: bold;
+  height: 75px;
+  top: 25vh;
+  right: 0px;
+  left: 0px;
+  background: rgb(63, 58, 93);
+}
+.content1 {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+}
+.welc {
+  float: left;
+  padding-left: 20vw;
+  font-size: 50px
+}
+.intro1 {
+  float: left;
+  padding-left: 0vw;
+  padding-top: 8vh;
+  font-size: 25px;
+}
+.name {
+  float: left;
+  padding-left: 0vw;
+  padding-top: 10vh;
+  font-size: 40px;
+}
+.content {
+  top: 500px;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+}
 
-  }
+.display {
+  top: 500px;
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 3fr;
 
-  #tool {
-    display: block;
-    text-align: justify;
-    padding-bottom: 10px;
-    font-size: 28px
-
-  }
-  #toolbutt {
-      padding-right: 10px;
-      border-radius: 10px;
-  } */
+}
+.contact {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #595381;
+  border-right-style: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #F7EBDE;
+  background: #3F3A5D;
+  font-family: 'Libre Baskerville', serif;
+}
+.button {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #595381;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  background: #ACA5CC;
+  color: #3F3A5D;
+  font-family: 'Libre Baskerville', serif;
+}
