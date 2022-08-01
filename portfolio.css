@@ -120,6 +120,7 @@ body {
 */
 
 body {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 2fr);
@@ -203,12 +204,15 @@ body {
 }
 
 .display {
-  top: 500px;
+  align-content: stretch;
+  display: inline-block;
+  align-content: center;
+  top: 40vh;
   position: absolute;
   text-align: center;
   font-size: 50px;
-  padding-bottom: 3fr;
-
+  font-family: 'Libre Baskerville', serif;
+  color: #3F3A5D
 }
 .contact {
   position: absolute;
@@ -237,4 +241,71 @@ body {
   background: #ACA5CC;
   color: #3F3A5D;
   font-family: 'Libre Baskerville', serif;
+}
+#five {
+  padding-left: 0px;
+}
+#head {
+  font-size: 45px;
+}
+#subhead {
+  font-size: 35px;
+  padding-right: 20px;
+}
+#info {
+  font-size: 24px;
+  padding-left: 40px;
+}
+.home {
+  list-style: none;
+}
+.page1 {
+  float: left;
+  width: 400px;
+  height: auto;
+}
+.page2 {
+  float: none;
+  margin-top: 700px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#koi {
+  float: left;
+  margin-left: 5vw;
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+#stairs {
+  float: right;
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.aboutMe {
+  list-style: none;
+}
+.resume {
+  display: block;
+  list-style: none;
+  text-align: left;
+  padding: 30px;
+  padding-top: 0px;
+  width: 800px;
+  float: left;
+}
+.skillList {
+  display: inline-block;
+  width: 450px;
+  height: 700px;
+  float: right;
+  margin-left: 200px;
+  padding: 20px;
+  padding-right: 40px;
+  color: #F7ECE1;
+  background: rgb(89, 83, 129);
+  border-radius: 25px;
 }
