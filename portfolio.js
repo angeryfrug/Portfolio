@@ -147,8 +147,10 @@ const aboutMe = () => {
     $skills.hide()
     $(`#myProjects`).hide()
     $(`.dropDown`).hide()
+    $(`.nav`).css('top', '1200px')
     hideHome()
     showAboutMe()
+
 }
 
 
@@ -343,8 +345,9 @@ const myResume = () => {
   $(`.dropDown`).hide()
   $resume.show(`slow`)
   $skills.show(`slow`)
-}
+  $(`.nav`).css('top', '2100px')
 
+}
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////////my projects
@@ -370,7 +373,6 @@ $('#one').on('click', home);
 $('#two').on('click', aboutMe);
 $('#three').on('click', myResume);
 $('#four').on('click', projects);
-$('#five').on('click', contactMe);
 
 
 })
