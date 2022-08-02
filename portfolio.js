@@ -50,11 +50,12 @@ const $breifHobbies = $(`<h2>`)
 .attr('id', 'head')
 .appendTo($page2)
 
-const $breif2Hobbies = $(`<p>`)
-.html(`I have a massive interest for video games! I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
+const $breif2Hobbies = $(`<h3>`)
+.html(`Dungeons and Dragons <br> Video Games <br> Knitting`)
 .addClass(`hlist`)
 .attr('id', 'info')
 .appendTo($breifHobbies)
+
 
 const showHome = () => {
 $page1.show(`slow`)
@@ -72,6 +73,8 @@ $('#stairs').hide()
 const home = () => {
     $resume.hide()
     $skills.hide()
+    $(`#myProjects`).hide()
+    $(`.dropDown`).hide()
     hideAboutMe()
     showHome()
 }
@@ -86,7 +89,6 @@ const $work = $(`<ul>`)
 
 const $Employments = $(`<ul>`)
 .addClass(`aboutMe`)
-.html(`Full-time Student`)
 .attr('id', 'info')
 .appendTo($work)
 ////////////////////////////////////////////////////////////////////////
@@ -98,13 +100,7 @@ const $currentEmployment = $(`<h2>`)
 
 const $current2Employment = $(`<li>`)
 .addClass(`aboutMe`)
-.html(`This Website`)
-.attr('id', 'info')
-.appendTo($currentEmployment)
-
-const $current3Employment = $(`<li>`)
-.addClass(`aboutMe`)
-.html(`Video Game Designs`)
+.html(`This Website <br> Video Game Designs <br> Knit Scarf <br> Software Design`)
 .attr('id', 'info')
 .appendTo($currentEmployment)
 
@@ -120,62 +116,42 @@ const $currentHobbies = $(`<h2>`)
 .attr('id', 'head')
 .appendTo($hobby)
 
-/////////////////////////////////////////////////////////////////////
-
 const $current2Hobbies = $(`<ul>`)
 .addClass(`aboutMe`)
-.html(`I have a massive interest for video games! <br>I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
+.html(`Dungeons and Dragons <br> Video Games <br> Knitting`)
 .attr('id', 'info')
 .appendTo($currentHobbies)
 
-const $hobbylist1 = $(`<li>`)
-.html(`I have a massive interest for video games! <br>I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
-.addClass(`aboutMe`)
-.attr('id', 'info')
-.appendTo($current2Hobbies)
+$work.hide()
+$hobby.hide()
 
-const $hobbylist2 = $(`<li>`)
-.html(`I have a massive interest for video games! <br>I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
-.addClass(`aboutMe`)
-.attr('id', 'info')
-.appendTo($current2Hobbies)
+$('.inputBox').appendTo($display).hide()
+
 
 ///////////////////////////////////////////////////////////////
-
-const $current3Hobbies = $(`<ul>`)
-.addClass(`aboutMe`)
-.html(`I have a massive interest for video games! <br>I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
-.attr('id', 'info')
-.appendTo($currentHobbies)
-
-const $hobbylist3 = $(`<li>`)
-.html(`I have a massive interest for video games! <br>I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
-.addClass(`aboutMe`)
-.attr('id', 'info')
-.appendTo($current2Hobbies)
-
-const $hobbylist4 = $(`<li>`)
-.html(`I have a massive interest for video games! <br>I play quite a few, as they do build skills I believe to be helpful to a work-life balance.`)
-.addClass(`aboutMe`)
-.attr('id', 'info')
-.appendTo($current2Hobbies)
 
 const hideAboutMe = () => {
 $work.hide()
 $hobby.hide()
+$('.inputBox').hide()
 }
 
 const showAboutMe = () => {
   $work.show(`slow`)
   $hobby.show(`slow`)
+  $('.inputBox').show('slow')
 }
 
 const aboutMe = () => {
     $resume.hide()
     $skills.hide()
+    $(`#myProjects`).hide()
+    $(`.dropDown`).hide()
     hideHome()
     showAboutMe()
 }
+
+
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////////resume
@@ -363,6 +339,8 @@ $skills.hide()
 const myResume = () => {
   hideHome()
   hideAboutMe()
+  $(`#myProjects`).hide()
+  $(`.dropDown`).hide()
   $resume.show(`slow`)
   $skills.show(`slow`)
 }
@@ -370,23 +348,28 @@ const myResume = () => {
 
 /////////////////////////////////////////////////////////////////////////
 //////////////////////////////////my projects
-const $projects = $(`<div>`)
-.addClass(`projects`)
-.appendTo($display)
+$('.dropDown').html('More Info Coming Soon')
 
-const $dropDown = $(`<div>`)
-.attr('id', 'dropmenu')
-.appendTo($(`#four`))
+$(`.dropDown`).append($('#myProjects'))
+$(`.dropDown`).hide()
 
-const $mySelect = $('#myProjects')
-.appendTo($dropDown)
 
+
+const projects =()=>{
+  $(`.dropDown`).show('slow')
+}
+
+///////////////////////////////////////////////////////////////////////
+//////////////////////////////////contact me
+const $result1 = $(`<div>`)
+.addClass('results')
+.appendTo($('contactButt'))
 
 
 $('#one').on('click', home);
 $('#two').on('click', aboutMe);
 $('#three').on('click', myResume);
-$('#four').on('click', myProjects);
+$('#four').on('click', projects);
 $('#five').on('click', contactMe);
 
 

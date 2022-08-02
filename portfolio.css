@@ -214,22 +214,6 @@ body {
   font-family: 'Libre Baskerville', serif;
   color: #3F3A5D
 }
-.contact {
-  position: absolute;
-  display: inline-block;
-  right: 0;
-  top: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  border-color: #595381;
-  border-right-style: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  color: #F7EBDE;
-  background: #3F3A5D;
-  font-family: 'Libre Baskerville', serif;
-}
 .button {
   display: block;
   padding: 10px;
@@ -242,8 +226,82 @@ body {
   color: #3F3A5D;
   font-family: 'Libre Baskerville', serif;
 }
-#five {
-  padding-left: 0px;
+#four {
+  z-index: 11
+}
+.dropDown {
+  z-index: 10;
+  position: absolute;
+  display: block;
+  width: 550px;
+  height: 200px;
+  float: right;
+  margin-left: 1000px;
+  padding-top: 150px;
+  padding-right: 40px;
+  color: #F7ECE1;
+  background: rgb(89, 83, 129);
+  border-radius: 25px;
+}
+#myProjects {
+  z-index: 12
+  display:contents;
+  visibility: visible;
+}
+.contact {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 20px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #595381;
+  border-right-style: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #F7EBDE;
+  background: #3F3A5D;
+  font-family: 'Libre Baskerville', serif;
+}
+.contactButt {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  width: 125px;
+  top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #595381;
+  border-right-style: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #F7EBDE;
+  background: #3F3A5D;
+  font-family: 'Libre Baskerville', serif;
+}
+.results{
+  z-index: 10;
+  position: absolute;
+  display: block;
+  width: 550px;
+  height: 200px;
+  right: 0;
+  color: #F7ECE1;
+  background: rgb(89, 83, 129);
+  border-radius: 25px;
+}
+.work {
+  margin: 20px;
+  float: left;
+  width: 850px;
+}
+.hobby {
+  margin: 20px;
+  float: right;
+  width: 550px;
 }
 #head {
   font-size: 45px;
@@ -259,16 +317,13 @@ body {
 .home {
   list-style: none;
 }
+.inputBox {
+
+}
 .page1 {
   float: left;
   width: 400px;
   height: auto;
-}
-.page2 {
-  float: none;
-  margin-top: 700px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 #koi {
   float: left;
@@ -297,6 +352,29 @@ body {
   width: 800px;
   float: left;
 }
+.inputBox {
+  display: block;
+}
+#inputTitle {
+  font-size: 45px;
+  display: inline-block;
+}
+.nav {
+  position: absolute;
+  top: 1200px;
+  left: 0vw;
+  right: 0vw;
+  height: 150px;
+  background: rgb(89, 83, 129);
+  display: block;
+  color: #F7EBDE;
+  padding-top: 75px;
+}
+a{
+  padding-left: 50px;
+
+}
+
 .skillList {
   display: inline-block;
   width: 450px;
