@@ -3,3 +3,5 @@ I first started out making the header with buttons and the profile. I kind of de
 I made a menu drop thing for the projects but i dont have any projects so i just put a message in it.
 I put a contact me thing there with a drop down menu but Im not sure how to take input from the contact me to make a small drop menu with the info so I just left it as an interactable button for later.
 also I forgot the links so I had to add that footer last minute. 
+
+Also i found the footer didnt move with the page so i added to the function to switch the css to fit the different pages
